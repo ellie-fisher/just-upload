@@ -1,0 +1,50 @@
+@charset 'utf-8';
+
+@import '~bulma/sass/utilities/initial-variables';
+@import '~bulma/sass/utilities/functions';
+@import '~bulma/sass/base/animations';
+
+
+/* Override Bulma variables */
+
+$body-overflow-y: auto;
+$navbar-breakpoint: 0;
+
+
+.loading-spinner
+{
+	-webkit-animation: spinAround 500ms infinite linear;
+	        animation: spinAround 500ms infinite linear;
+	border: 2px solid #dbdbdb;
+	border-radius: 290486px;
+	border-right-color: transparent;
+	border-top-color: transparent;
+	content: '';
+	display: block;
+	height: 1em;
+	position: relative;
+	width: 1em;
+}
+
+.file-list-item
+{
+	width: 50%;
+}
+
+.rules-list
+{
+	list-style: none;
+}
+
+.button-transition
+{
+	transition: background-color 300ms;
+}
+
+.recent-files
+{
+	word-break: break-all;
+}
+
+
+@import '~bulma/bulma';  // This must be last or the variable changes won't work.
